@@ -1,0 +1,52 @@
+/* Стили для body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f0f0f0;
+  }
+  
+  /* Контейнер */
+  .wrapper {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Заголовок, который будет "пульсировать" */
+  .animated-header {
+    font-size: 3em;
+    color: #ff6700;
+    animation: pulse 2s infinite;
+  }
+  
+  /* Анимация "пульса" */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Параграф с плавным появлением */
+  .animated-paragraph {
+    font-size: 1.2em;
+    margin-top: 20px;
+    animation: fadeIn 2s forwards;
+    opacity: 0; /* Изначально прозрачный */
+  }
+  
+  /* Анимация плавного появления */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
