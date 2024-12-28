@@ -1,19 +1,210 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Простой сайт с анимацией</title>
-  <!-- Подключаем файл со стилями -->
-  <link rel="stylesheet" href="style.css" />
+  <title>Frame 135</title>
+  <style>
+    /* Сбрасываем базовые отступы, чтобы было легче верстать */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #131313;
+    }
+
+    /* Контейнер для "Frame 135" */
+    .frame-135 {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+      margin: 0 auto; /* Чтобы центрировать относительно экрана */
+      background: #131313;
+    }
+
+    /* Rectangle 2 */
+    .rectangle-2 {
+      position: absolute;
+      width: 960px;
+      height: 1080px;
+      left: 960px;
+      top: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(19, 19, 19, 0.22) 0%,
+        rgba(255, 149, 0, 0) 100%
+      );
+    }
+
+    /* Текстовый блок с описанием услуг */
+    .description {
+      position: absolute;
+      width: 891px;
+      height: 698px;
+      left: 999px;
+      top: 220px;
+
+      font-family: 'Blender Pro', sans-serif;
+      font-style: italic;
+      font-weight: 501;
+      font-size: 26px;
+      line-height: 31px;
+      display: flex;
+      align-items: center;
+      color: #9A7F5A;
+    }
+
+    /* Plesha.cfg */
+    .plesha-cfg {
+      position: absolute;
+      width: 1071px;
+      height: 150px;
+      left: 425px;
+      top: 0px;
+
+      font-family: 'Toxigenesis', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 70.08%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      color: #131313;
+      border: 3px solid #FF9500;
+      justify-content: center;
+    }
+
+    /* Вертикальная линия (Rectangle 1) */
+    .vertical-line {
+      position: absolute;
+      width: 1px;
+      height: 780px;
+      left: 959px;
+      top: 220px;
+      background: linear-gradient(
+        180deg,
+        rgba(217, 217, 217, 0) 0%,
+        #FF9500 50%,
+        rgba(115, 115, 115, 0) 100%
+      );
+    }
+
+    /* Кнопки / Прямоугольники слева */
+    .rectangle-3,
+    .rectangle-4,
+    .rectangle-5 {
+      box-sizing: border-box;
+      position: absolute;
+      width: 401px;
+      height: 81px;
+      left: 280px;
+      background: #131313;
+      border: 2px solid #FF9500;
+    }
+    .rectangle-3 {
+      top: 346px;
+    }
+    .rectangle-4 {
+      top: 459px;
+    }
+    .rectangle-5 {
+      top: 569px;
+      border-color: #0C0C0C;
+    }
+
+    /* Подписи к прямоугольникам */
+    .cs-companion,
+    .gsi-webcam,
+    .title-system {
+      position: absolute;
+      width: 400px;
+      height: 81px;
+      left: 281px;
+
+      font-family: 'Toxigenesis', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 70.08%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      color: #A3865F;
+    }
+    .cs-companion {
+      top: 346px;
+    }
+    .gsi-webcam {
+      top: 459px;
+    }
+    .title-system {
+      top: 569px;
+      color: #0E0E0E;
+    }
+
+    /* Блоки с "Vector", "Vector 2" и т.д. — пропущу их верстку,
+       так как для демонстрации хватит позиционирования.
+       Но если нужно — просто используйте такие же position + width/height.
+       Ниже пример общего контейнера. */
+    .logo-frame {
+      position: absolute;
+      width: 92px;
+      height: 92px;
+      left: 37px;
+      top: 29px;
+      /* вы можете вставить сюда img или background-image */
+    }
+
+    /* Кнопка/ссылка для перехода на вторую страницу */
+    .link-to-frame8 {
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      padding: 15px 30px;
+      background-color: #FF9500;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      font-family: sans-serif;
+      border: 2px solid #fff;
+    }
+    .link-to-frame8:hover {
+      background-color: #ffbb33;
+      border-color: #131313;
+      color: #131313;
+    }
+  </style>
 </head>
 <body>
+  <div class="frame-135">
+    <!-- Главные блоки верстки -->
+    <div class="rectangle-2"></div>
+    <div class="vertical-line"></div>
 
-  <div class="wrapper">
-    <h1 class="animated-header">Привет, GitHub!</h1>
-    <p class="animated-paragraph">
-      Это наш маленький сайт с анимацией на CSS. 
-    </p>
+    <div class="plesha-cfg">Plesha.cfg</div>
+    <div class="description">
+      I offer professional live streaming services for streamers, online tournaments, 
+      and events of any scale... (текст сокращён для примера)
+    </div>
+
+    <div class="rectangle-3"></div>
+    <div class="rectangle-4"></div>
+    <div class="rectangle-5"></div>
+
+    <div class="cs-companion">CS COMPANION TRIGERS</div>
+    <div class="gsi-webcam">GSI WEB CAM</div>
+    <div class="title-system">TITLE SYSTEM</div>
+
+    <!-- Ссылка для перехода на следующую страницу -->
+    <a class="link-to-frame8" href="frame8.html">Перейти на вторую страницу</a>
   </div>
-
 </body>
 </html>
