@@ -2,257 +2,30 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Plesha.cfg Page</title>
-  <style>
-    /* Сброс отступов и полей по умолчанию */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Шрифт: вместо 'Blender Pro' указываем sans-serif как fallback */
-    @font-face {
-      font-family: 'Blender Pro';
-      src: local('Arial'); /* Подставьте реальный путь к шрифту, если нужно */
-    }
-
-    /* Шрифт: вместо 'Toxigenesis' указываем sans-serif как fallback */
-    @font-face {
-      font-family: 'Toxigenesis';
-      src: local('Arial'); /* Подставьте реальный путь к шрифту, если нужно */
-    }
-
-    /* ==================== Frame 135 ==================== */
-    #frame-135 {
-      position: relative;
-      width: 1920px;
-      height: 1080px;
-      background: #131313;
-      margin: 0 auto; /* Чтобы страница центрировалась в браузере */
-    }
-
-    /* ==================== Rectangle 2 ==================== */
-    #rectangle-2 {
-      position: absolute;
-      width: 960px;
-      height: 1080px;
-      left: 960px;
-      top: 0px;
-      background: linear-gradient(
-        180deg,
-        rgba(19, 19, 19, 0.22) 0%,
-        rgba(255, 149, 0, 0) 100%
-      );
-    }
-
-    /* ==================== Текстовый блок о стримах ==================== */
-    #offer-text {
-      position: absolute;
-      width: 891px;
-      height: 698px;
-      left: 999px;
-      top: 220px;
-
-      font-family: 'Blender Pro', sans-serif;
-      font-style: italic;
-      font-weight: 501;
-      font-size: 26px;
-      line-height: 31px;
-
-      display: flex;
-      align-items: center;
-
-      color: #9A7F5A;
-    }
-
-    /* ==================== Plesha.cfg ==================== */
-    #plesha-cfg {
-      position: absolute;
-      width: 1071px;
-      height: 150px;
-      left: 425px;
-      top: 0px;
-
-      font-family: 'Toxigenesis', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 80px;
-      line-height: 70.08%; /* ~ 56px от 80px (для наглядности можно скорректировать) */
-      display: flex;
-      align-items: center;
-      justify-content: center; /* Чтобы текст был в центре */
-      text-align: center;
-      text-transform: uppercase;
-
-      color: #131313;
-      border: 3px solid #FF9500;
-    }
-
-    /* ==================== Rectangle 1 (вертикальная градиентная полоска) ==================== */
-    #rectangle-1 {
-      position: absolute;
-      width: 1px;
-      height: 780px;
-      left: 959px;
-      top: 220px;
-
-      background: linear-gradient(
-        180deg,
-        rgba(217, 217, 217, 0) 0%,
-        #FF9500 50%,
-        rgba(115, 115, 115, 0) 100%
-      );
-    }
-
-    /* ==================== Rectangle 3 ==================== */
-    #rectangle-3 {
-      box-sizing: border-box;
-      position: absolute;
-      width: 401px;
-      height: 81px;
-      left: 280px;
-      top: 346px;
-
-      background: #131313;
-      border: 2px solid #FF9500;
-    }
-
-    /* ==================== Rectangle 4 ==================== */
-    #rectangle-4 {
-      box-sizing: border-box;
-      position: absolute;
-      width: 401px;
-      height: 81px;
-      left: 280px;
-      top: 459px;
-
-      background: #131313;
-      border: 2px solid #FF9500;
-    }
-
-    /* ==================== Rectangle 5 ==================== */
-    #rectangle-5 {
-      box-sizing: border-box;
-      position: absolute;
-      width: 401px;
-      height: 81px;
-      left: 280px;
-      top: 569px;
-
-      background: #131313;
-      border: 2px solid #0C0C0C;
-    }
-
-    /* ==================== CS COMPANION TRIGERS ==================== */
-    #cs-companion-trigers {
-      position: absolute;
-      width: 400px;
-      height: 81px;
-      left: 281px;
-      top: 346px;
-
-      font-family: 'Toxigenesis', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 70.08%;
-      display: flex;
-      align-items: center;
-      justify-content: center; /* Чтобы текст был по центру внутри блока */
-      text-align: center;
-      text-transform: uppercase;
-
-      color: #A3865F;
-    }
-
-    /* ==================== GSI WEB CAM ==================== */
-    #gsi-web-cam {
-      position: absolute;
-      width: 400px;
-      height: 81px;
-      left: 281px;
-      top: 459px;
-
-      font-family: 'Toxigenesis', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 70.08%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      text-transform: uppercase;
-
-      color: #A3865F;
-    }
-
-    /* ==================== TITLE SYSTEM ==================== */
-    #title-system {
-      position: absolute;
-      width: 400px;
-      height: 81px;
-      left: 281px;
-      top: 569px;
-
-      font-family: 'Toxigenesis', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 70.08%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      text-transform: uppercase;
-
-      color: #0E0E0E;
-    }
-
-  </style>
+  <title>Fire Flicker</title>
+  <!-- Подключаем внешний CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Подключение шрифта Toxigenesis (если у вас он есть локально или через сторонний сервис) -->
+  <!-- <link rel="stylesheet" href="...ссылка-на-шрифт..."> -->
 </head>
 <body>
 
-  <!-- Главный контейнер: Frame 135 -->
-  <div id="frame-135">
+  <!-- Основной контейнер с фоном -->
+  <div class="container">
     
-    <!-- Левая часть (фон) остается #131313, правая часть — градиент -->
-    <div id="rectangle-2"></div>
+    <!-- Текст LIVE -->
+    <div class="live">LIVE</div>
     
-    <!-- Вертикальная полоска, разделяющая левую и правую области -->
-    <div id="rectangle-1"></div>
-
-    <!-- Заголовок Plesha.cfg -->
-    <div id="plesha-cfg">PLESHA.CFG</div>
-
-    <!-- Блок с текстом про услуги (offer text) -->
-    <div id="offer-text">
-      I offer professional live streaming services for streamers, online tournaments, 
-      and events of any scale. With over 10 years of experience in esports and live 
-      broadcast production, I handle every detail of a high-quality stream: from top-tier 
-      observing, graphics, and sound to replays and visual effects. As the lead director 
-      for broadcasts of major events like WePlay Dota Animajor and most WePlay tournaments 
-      since 2020, I bring hands-on expertise gained throughout my career, including my 
-      years at Starladder, which concluded after directing the CS Major 2019. 
-      This experience spans all aspects of production, from studio setup and directing 
-      to commentary and design, enabling me to deliver polished, audience-focused broadcasts. 
-      Whether for a high-stakes tournament, a collaborative fan stream, or any live event, 
-      I have the expertise and advanced gear to deliver advanced live broadcasts, including 
-      replays and all key features for an engaging experience. 
-      Whether it’s a tournament or a fan stream I can bring your vision to life with professionalism.
-    </div>
-
-    <!-- Три прямоугольника (Rectangle 3, 4, 5) -->
-    <div id="rectangle-3"></div>
-    <div id="rectangle-4"></div>
-    <div id="rectangle-5"></div>
-
-    <!-- Тексты в прямоугольниках -->
-    <div id="cs-companion-trigers">CS COMPANION TRIGERS</div>
-    <div id="gsi-web-cam">GSI WEB CAM</div>
-    <div id="title-system">TITLE SYSTEM</div>
-
+    <!-- Ellipse 3 -->
+    <div class="ellipse ellipse3"></div>
+    <!-- Ellipse 4 -->
+    <div class="ellipse ellipse4"></div>
+    <!-- Ellipse 5 -->
+    <div class="ellipse ellipse5"></div>
+    
+    <!-- Блок с эффектом "огня" -->
+    <div class="fire"></div>
+    
   </div>
   
 </body>
